@@ -1,0 +1,260 @@
+:root{
+    --primarycolor:#3839a1;
+--secondarycolor:#ffffff;
+--bgcolor-1:#171a1c;
+--bgcolor-2:#22282a;
+--ancolor-1:#537388;
+--padding:8%;
+
+}
+ 
+ *{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;   
+    
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+     font-size: 16px;
+     color: var(--secondarycolor);
+}
+/**-----------------------------------
+------------------Home Section
+-----------------------------------**/
+.home {
+    width: 100%;
+    height: 100vh;
+background-color:var(--bgcolor-1);
+display: flex;
+flex-direction: column;
+}
+span{
+    color: var(--primarycolor);
+}
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    
+}
+nav {
+    padding-top: 2.2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ 
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--secondarycolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primarycolor);
+
+}
+.main-btn{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: honeydew;
+    background-color:var(--primarycolor);
+    border-radius: 15px;
+    display: inline-block;
+    padding:0.9375em 2.1875em ;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+transition:0.7s ease;
+}
+
+.main-btn:hover{
+    background-color:var(--ancolor-1) ;
+    transform: scale(1.1); }
+    
+.content{
+flex-grow: 1;
+padding: 0 var(--padding);
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.container-texts {
+    position: relative;
+    bottom: 70px;
+}
+p{
+    color:var(--ancolor-1);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+h1{
+    font-size: 4.2rem;
+    margin: 1.7rem 0;
+}
+ 
+h3{
+    font-size: 1.5rem;
+    margin: 0.9rem 0;
+}
+h4{
+    font-size: 1.24rem;
+    letter-spacing: 0.12rem;
+    margin: 0.3rem 0;
+}
+h5{
+    font-size: 1.37rem;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 2px;
+}
+.social{
+    margin-top: 1.5rem;
+}
+.social img{
+    margin-right: 1.6rem;
+    width: 1.9rem; 
+    transition: 0.4s;
+    
+    
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.home .container-image{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+.home .container-image img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 65%;
+    transform: translateX(-65%);
+    transition: 1.1s;
+    
+}
+.home .container-image:hover .shape{
+bottom:15px ;
+}
+/**-----------------------------------
+------------------About Section
+-----------------------------------**/
+.about{
+    background-color: var(--bgcolor-2);
+    padding:2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about .container-image{
+    width: 35%;
+}
+.about .container-image img{
+    width: 90%;
+    transition: 0.5s;
+}
+.about .container-image img:hover {
+    transform:scale(1.1);
+}
+.about .container-texts {
+    width: 45%;
+   
+    
+
+
+   
+}
+/**-----------------------------------
+------------------Lanes Section
+-----------------------------------**/
+.Lanes {
+background-color: var(--bgcolor-1);
+padding: 2rem var(--padding);
+
+} 
+.container-texts1{
+ 
+text-align: center; 
+
+}
+.box{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+ transition: ease 1s;
+
+
+}
+.box :hover{
+    transform: scale(1.1);
+}
+.card{
+    background-color: var(--bgcolor-2);
+    width: 290px;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    transition: ease 1s;
+
+
+}
+.card :hover{
+    transform: none ;
+}
+/**-----------------------------------
+------------------Champion_Categories Section
+-----------------------------------**/
+
+.Champion_Categories{
+    background-color: var(--bgcolor-2);
+    padding:5rem var(--padding);
+
+
+}
+.box1{
+    justify-content:space-between ;
+  padding-top: 20px;
+  display:grid;
+  grid-gap: 30px;
+  transition: 0.7s;
+
+}
+.box1 :hover{
+    transform: scale(1.1);
+}
+.card1{
+    background-color:var(--bgcolor-1);
+   border-radius: 15px;
+    padding: 1.3rem 2rem;
+    
+}
+.card1 :hover{
+    transform: none;
+}
+/**-----------------------------------
+------------------Footer Section
+-----------------------------------**/
+
+    
+    .footer{
+        background-color:black;
+        color: #fff;
+        padding: 2em;
+        display: flex;
+     
+    }
+    
